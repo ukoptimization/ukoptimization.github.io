@@ -118,7 +118,7 @@
 
     
     <div class="bd-example">
-        <table class="table table-striped">
+        <!-- <table class="table table-striped">
           <thead>
           <tr>
             <th scope="col">#</th>
@@ -170,7 +170,17 @@
                 </div></td>
           </tr>
           </tbody>
-        </table>
+        </table> -->
+
+        <table id="table_brands" class="table table-striped">
+          <tr>
+              <th>#</th>
+              <th>Brand</th>
+              <th>Manage</th>
+          </tr>
+       
+      </table>
+
         </div>
       </div>
     </div>
@@ -186,5 +196,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/turndown/7.0.0/turndown.min.js" integrity="sha512-v9hVAwlYm3ca133Q8GsdUJ6G9vcOgcgBXsIl/sAUqcvAjlTYzMATYkCHsG70fmFIUoFaH7udfdO2gcwrqkRfAw==" crossorigin="anonymous"></script>
     <script src="wordup.js"></script>
     <!-- <script src="brands.js"></script> -->
+    <script>
+      for(let i=0;i<brandsArray.length;i++){
+           let number=i+1;
+       document.getElementById("table_brands").innerHTML+="<td>"+number+"</td><td>"+brandsArray[i]+"</td> <td><a href='#''>Edit</a>|<a href='#'>Delete</a></td>";
+       }</script>
 
 </body></html>
