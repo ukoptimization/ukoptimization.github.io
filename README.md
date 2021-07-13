@@ -1,12 +1,4 @@
-# Wordup
+Issues:
 
-Convert Word documents to clean HTML or Markdown.
-
-<https://communicatehealth.github.io/wordup>
-
-Wordup uses [CKEditor 4](https://ckeditor.com/ckeditor-4/) to do most of the cleaning. Additional formatting is applied to CKEditor&rsquo;s output. Markdown conversion handled by [Turndown](https://github.com/domchristie/turndown).
-
-## Running locally
-
-1. `npm install`
-2. `npm run work`
+1. Не працює заміна Internal домену, якщо після "https://" стоїть "www"
+2. Не працює редагування External лінків (якщо посилання ноно лінку, вказаним як інтернал - додавання класу externalLink + blank)
