@@ -55,7 +55,11 @@ function scrubber(string) {
     .replace(/&nbsp;&nbsp;&nbsp;&nbsp;/g, "&nbsp;")
     .replace(/&nbsp;&nbsp;&nbsp;/g, "&nbsp;")
     .replace(/&nbsp;&nbsp;/g, "&nbsp;")
-    .replace(/&nbsp;/g, " ");
+    .replace(/&nbsp;/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace('&ldquo;','"')
+    .replace('&rdquo;','"')
+    .replace('&rsquo;',"'");
 
   let resultBrands = scrubbed;
   for (let i in brandsArray) {
