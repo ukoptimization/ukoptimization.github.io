@@ -21,7 +21,7 @@ CKEDITOR.replace("wordup", {
   ],
 });
 
-brandsArray = ["Cerelac", "Gerber", "NaturNes","Nestlé Pure Life", "Perrier", "S.Pellegrino","Cheerios", "Fitness", "Lion", "Nesquik Cereal","Aero", "Cailler", "KitKat", "Milkybar", "Nestlé Les Recettes de l'Atelier", "Orion", "Quality Street", "Smarties", "Toll House","Nescafé", "Nescafé 3 in 1", "Nescafé Cappuccino", "Nescafé Classic", "Nescafé Decaff","Nescafé Dolce Gusto", "Nescafé Gold", "Nespresso","Buitoni", "Herta", "Hot Pockets", "Lean Cuisine", "Maggi", "Stouffer's"," Thomy","Carnation", "Coffee-Mate", "La Laitière", "Nido","Milo", "Nesquik", "Nestea","Chef", "Chef-Mate", "Maggi", "Milo","Minor’s", "Nescafé", "Nestea", "Sjora", "Lean Cuisine", "Stouffer's","Boost", "Nutren Junior", "Peptamen", "Resource","Dreyer’s", "Extrême", "Häagen-Dazs", "Mövenpick", "Nestlé Ice Cream","Alpo", "Bakers Complete", "Beneful", "Cat Chow", "Chef Michael’s Canine Creations", "Dog Chow", "Fancy Feast", "Felix", "Friskies", "Gourmet", "Purina", "Purina ONE", "Pro Plan"];
+brandsArray = ["Cerelac", "Gerber", "NaturNes","Nestlé Pure Life", "Perrier", "S.Pellegrino","Cheerios", "Fitness", "Lion", "Nesquik Cereal","Aero", "Cailler", "KitKat", "KitKat", "Milkybar", "Nestlé Les Recettes de l'Atelier", "Orion", "Quality Street", "Smarties", "Toll House","Nescafé", "Nescafé 3 in 1", "Nescafé Cappuccino", "Nescafé Classic", "Nescafé Decaff","Nescafé Dolce Gusto", "Nescafé Gold", "Nespresso","Buitoni", "Herta", "Hot Pockets", "Lean Cuisine", "Maggi", "Stouffer's"," Thomy","Carnation", "Coffee-Mate", "La Laitière", "Nido","Milo", "Nesquik", "Nestea","Chef", "Chef-Mate", "Maggi", "Milo","Minor’s", "Nescafé", "Nestea", "Sjora", "Lean Cuisine", "Stouffer's","Boost", "Nutren Junior", "Peptamen", "Resource","Dreyer’s", "Extrême", "Häagen-Dazs", "Mövenpick", "Nestlé Ice Cream","Alpo", "Bakers Complete", "Beneful", "Cat Chow", "Chef Michael’s Canine Creations", "Dog Chow", "Fancy Feast", "Felix", "Friskies", "Gourmet", "Purina", "Purina ONE", "Pro Plan"];
   
 
   
@@ -63,7 +63,9 @@ function scrubber(string) {
     .replace(/&nbsp;/g, " ")
     .replace('&ldquo;','"')
     .replace('&rdquo;','"')
-    .replace('&rsquo;',"'");
+    .replace('&rsquo;',"'")
+    .replace('&quot;','"')
+    ;
 
   let resultBrands = scrubbed;
   for (let i in brandsArray) {
