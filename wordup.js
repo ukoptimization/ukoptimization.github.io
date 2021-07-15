@@ -61,10 +61,12 @@ function scrubber(string) {
     .replace(/&nbsp;&nbsp;/g, "&nbsp;")
     .replace(/&nbsp;/g, " ")
     .replace(/&nbsp;/g, " ")
-    .replace('&ldquo;','"')
+    .replace('/&ldquo;/g','"')
     .replace('&rdquo;','"')
-    .replace('&rsquo;',"'")
+    .replace('/&rsquo;/g',"'")
     .replace('&quot;','"')
+    .replace(/&lsquo;/g,"'")
+    .replace(/&ndash;/g,"-")
     ;
 
   let resultBrands = scrubbed;
