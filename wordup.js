@@ -62,7 +62,7 @@ function scrubber(string) {
     .replace(/&nbsp;/g, " ")
     .replace(/&nbsp;/g, " ")
     .replace('/&ldquo;/g','"')
-    .replace('/&rdquo;/','"')
+    .replace('&rdquo;','"')
     .replace('/&rsquo;/g',"'")
     .replace('&quot;','"')
     .replace(/&lsquo;/,"")
